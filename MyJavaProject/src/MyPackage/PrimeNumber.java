@@ -16,9 +16,16 @@ public class PrimeNumber {
 			return true;
 			//System.out.println(n+" is prime number" );
 	}
+	public static void numberBetween(int a, int b) {
+		for(int i=a;i<=b;i++) {
+			boolean res = isPrime(i);
+			if(res)
+				System.out.println(i);
+		}
+	}
 	public static void main(String args[]) {
-		int n=4;
-		System.out.println(isPrime(n));
+		int a=1, b=100;
+		numberBetween(a,b);
 		
 	}
 
